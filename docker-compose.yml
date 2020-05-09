@@ -1,0 +1,10 @@
+version: "3"
+services:
+  redis:
+    image: redis
+  rabbitmq:
+    image: rabbitmq
+  app:
+    build:
+      dockerfile: ./distrib/Dockerfile
+      context: ./build
